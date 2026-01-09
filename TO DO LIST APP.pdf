@@ -1,0 +1,151 @@
+1. To-Do List App
+
+Tech: HTML, CSS, JavaScript
+Features:
+
+Add / delete / mark tasks as completed
+
+LocalStorage to save tasks
+
+Responsive UI
+
+Why it’s good for GitHub:
+Shows DOM manipulation, clean UI, and basic JS logic.
+
+2. Password Generator
+
+Tech: JavaScript
+Features:
+
+Generate strong passwords
+
+Options for symbols, numbers, uppercase
+
+Copy-to-clipboard button
+
+3. Calculator
+
+Tech: HTML, CSS, JS
+Features:
+
+Basic arithmetic
+
+Keyboard input support
+
+Clean UI
+
+🔹 Intermediate Mini Projects
+4. Weather App 🌦️
+
+Tech: JavaScript + API
+Features:
+
+Fetch real-time weather using API
+
+Search by city
+
+Display temperature, humidity, wind
+
+Bonus: Use OpenWeather API
+
+5. Expense Tracker
+
+Tech: JavaScript
+Features:
+
+Add income & expenses
+
+Monthly balance
+
+Data stored in LocalStorage
+
+6. Quiz Application
+
+Tech: JavaScript
+Features:
+
+Multiple-choice questions
+
+Score calculation
+
+Timer
+CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #eee;
+    margin: 5px 0;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete {
+    color: red;
+    cursor: pointer;
+}
